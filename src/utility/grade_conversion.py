@@ -10,7 +10,6 @@ for when there are 8 PIs or less.
 """
 
 import os
-import time
 
 class Student:
     def __init__(self, line):
@@ -79,7 +78,4 @@ class FileHandler:
                 self.file_counter += 1
 
 if __name__ == "__main__":
-    start_time = time.time()
     FileHandler('/home/marcello/Scripts/Python/grade_inputs/')
-    end_time = time.time()
-    print(f'gradebooks updated in {end_time - start_time:.5f} seconds')
