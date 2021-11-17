@@ -13,6 +13,14 @@ import os
 
 class Student:
     def __init__(self, line):
+        """ 
+        __init__ creates the student objects directly from the input.csv file
+        The code in __init__ is written to handle the unusual formating 
+        in the input.csv file
+
+        Example inpout line: " -> Doe, Jane","3.4","2.61053","3.4","3"
+                             " -> Last, First", "Score1", "Score2", "Score3, "Score4"
+        """
         tmp = line.strip().split(',')        
         self.name = tmp[0][5:] +", " + tmp[1].split()[0].strip('\"')
 
