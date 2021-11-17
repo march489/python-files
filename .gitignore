@@ -5,3 +5,4 @@ outputs/
 *.lock
 *.toml
 test_inputs/
+.gitignore
