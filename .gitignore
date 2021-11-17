@@ -1,7 +1,0 @@
-*.swp
-.vscode/
-grade_inputs/
-outputs/
-*.lock
-*.toml
-test_inputs/
